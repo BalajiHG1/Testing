@@ -1,0 +1,20 @@
+apiVersion: appv1
+kind: Deployment
+matadata: 
+	name: myapp_v1
+spec:
+    replicas: 4
+	selector:
+        matchLabels:
+            app: myapp
+    tamplate:
+        matadata:
+            labels:
+                app: myapp
+        spec:
+            containers:
+              - name: test1
+                image: nginx
+                ports:
+                - containerport: 80
+                    
