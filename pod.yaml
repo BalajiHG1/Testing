@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+matadata: 
+	name: myapp_v2
+spec:
+  spec:
+    containers:
+        - name: test2
+          image: nginx
+          ports:
+            - containerport: 80
