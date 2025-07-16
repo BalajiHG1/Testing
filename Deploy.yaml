@@ -6,7 +6,7 @@ spec:
     replicas: 4
 	selector:
         matchLabels:
-            app: myapp
+            app: myapp_v1
     tamplate:
         matadata:
             labels:
